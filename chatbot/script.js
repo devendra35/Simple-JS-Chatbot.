@@ -1,1 +1,9 @@
 
+async function getGeminiAnswer() {
+    const prompt = document.getElementById('user_Prompt').value;
+    const responseDiv = document.getElementById('geminiResponse');
+
+    if (!prompt.trim()) {
+        responseDiv.innerHTML = 'Please enter a prompt.';
+        return;
+    }
