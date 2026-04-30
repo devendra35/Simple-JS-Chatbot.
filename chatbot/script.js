@@ -1,4 +1,4 @@
-
+const API_KEY = '' //enter your api key.
 async function getGeminiAnswer() {
     const prompt = document.getElementById('user_Prompt').value;
     const responseDiv = document.getElementById('geminiResponse');
